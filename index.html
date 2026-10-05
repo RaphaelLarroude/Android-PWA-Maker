@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#08111f" />
+  <title>Android PWA Maker</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main class="shell">
+    <header class="hero"><span class="badge">ANDROID PWA BUILDER</span><h1>Transforme qualquer site em um app Android.</h1><p>Informe a URL, revise os dados detectados e baixe um pacote PWA pronto para hospedar.</p></header>
+    <section class="card"><label for="siteUrl">URL do site</label><div class="url-row"><input id="siteUrl" type="url" placeholder="https://exemplo.com" autocomplete="url" /><button id="inspectBtn">Analisar site</button></div><p id="status" class="status">Use uma URL pública com HTTPS.</p></section>
+    <section id="result" class="grid" hidden><div class="card"><div class="section-title"><span class="icon" id="iconPreview">⌁</span><div><h2 id="appName">Seu aplicativo</h2><p id="appUrl">—</p></div></div><div class="form-grid"><label>Nome do app<input id="nameInput" /></label><label>Cor do tema<input id="colorInput" type="color" value="#2563eb" /></label></div><button id="downloadBtn" class="primary full">Baixar PWA Android</button></div><div class="card steps"><h2>Instalação no Android</h2><ol><li>Baixe e hospede os arquivos em HTTPS.</li><li>Abra o endereço no Chrome do Android.</li><li>Toque em <strong>Instalar aplicativo</strong> ou no menu ⋮ → <strong>Adicionar à tela inicial</strong>.</li></ol><p class="hint">O PWA abrirá o site escolhido em uma janela independente.</p></div></section>
+    <footer>Feito para sites modernos · Compatível com Chrome Android</footer>
+  </main>
+  <script src="app.js"></script>
+</body>
+</html>
